@@ -1,0 +1,45 @@
+https://www.autoringlus.ee/autod-m%C3%BC%C3%BCgis/-page/%%
+scrabing_attr = [
+    {'name': 'name', 'path': [{'attribute': 'div', 'html_class': 's123-editor', 'place': 0,},
+                                     {'attribute': 'p', 'html_class': '', 'place': 0,}]},
+    {'name': 'power or km', 'path': [{'attribute': 'div', 'html_class': 's123-editor', 'place': 0,},
+                                     {'attribute': 'p', 'html_class': '', 'place': 1,}]},
+]
+
+source_attr = {'attribute': 'div', 'html_class': 'blog-content breakable'}
+
+
+pagination_attr = {'attribute': 'ul', 'html_class': 'pagination pagination-sm'}
+
+details = {
+    'source': 'https://www.autoringlus.ee/autod-m%C3%BC%C3%BCgis/-page/%%',
+    'domain': 'https://www.autoringlus.ee',
+    'db_name': 'parcedInfo.db',
+    'table_name': 'autoringlus',
+}
+
+
+#########################################
+
+https://nordauto.ee/en/cars-catalog/?listing_page=%%
+
+scrabing_attr = [
+    {'name': 'title', 'path': [{'attribute': 'span', 'html_class': 'vehicle-title-text', 'place': 0,}]},
+    {'name': 'color', 'path': [{'attribute': 'div', 'html_class': 'vehicle-details-info', 'place': 0,},
+                               {'attribute': 'table', 'html_class': '', 'place': 0,},
+                               {'attribute': 'tbody', 'html_class': '', 'place': 0,},
+                               {'attribute': 'tr', 'html_class': '', 'place': 4,},
+                               {'attribute': 'td', 'html_class': '', 'place': 1,}]},
+]
+
+source_attr = {'attribute': 'td', 'html_class': 'vehicle-description'}
+
+
+pagination_attr = {'attribute': 'ul', 'html_class': 'pagination'}
+
+details = {
+    'source': 'https://nordauto.ee/en/cars-catalog/?listing_page=%%',
+    'domain': 'https://nordauto.ee',
+    'db_name': 'parcedInfo.db',
+    'table_name': 'nordauto',
+}
